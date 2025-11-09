@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-cyan-50 via-sky-50 to-emerald-50 text-gray-800 min-h-screen;
+}
+
+/* 🔮 Consistent page background for all pages */
+.page-container {
+  @apply min-h-screen flex flex-col items-center justify-center 
+         bg-gradient-to-br from-cyan-100 via-sky-200 to-emerald-100 
+         transition-all duration-500;
+}
+
+/* ✨ Glass box style */
+.glass-card {
+  @apply bg-white/30 backdrop-blur-xl rounded-3xl shadow-2xl p-8
+         border border-white/20 text-center;
+}
+
+/* 🧊 Upload, Login, Signup Buttons */
+.btn-primary {
+  @apply bg-gradient-to-r from-yellow-400 to-amber-500 text-white font-semibold 
+         py-2 px-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 
+         transition-all duration-300;
+}
